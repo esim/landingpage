@@ -1,0 +1,194 @@
+ header, nav, footer {
+            display: block;
+        }
+        /* Universal selector = applies to all elements */
+        * {
+            box-sizing: border-box;
+        
+        }
+        body {
+            background-color: lightgray;
+            font-family: Georgia, Times, serif;
+        }
+        h1, h2 {
+            font-family: Georgia, Times, sans-serif;
+        }
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%
+        }
+        header {
+            background-color: white;
+            text-align: center;
+            
+            padding-top: 2em;
+            padding-bottom: 1em;
+        }
+
+/* NAV STARTS */
+        nav {
+            background-color: #154184;
+            text-align: center;
+        }
+        /* Removes bullets, margin, and padding */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        /* Converts li from block (default) to inline */
+        nav li {
+            display: inline;
+        }
+        /* Style navbar links */
+        nav a {
+            color: #ddd;
+            display: inline-block; /* Inline with width height */
+            margin-right: -.33em; /* Spacing issue fix */
+            padding: 1em;
+            text-decoration: none;
+        }
+        
+        nav a:visited {
+            background-color: antiquewhite;
+            color: aliceblue;
+        }
+        
+        nav a:hover {
+            background-color: white;
+            color: #154184;
+        }
+        nav a:active {
+            background-color: aqua;
+            color: red;
+        }
+        nav a:active {
+            background-color: #16425B;
+            color: white;
+        }
+
+
+
+/*NAV ENDS*/
+
+/* FIRST BLOCK */
+
+        #firstblock {
+            background-color: #6369D1;
+            padding: 5em;
+            overflow: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(images/bonepattern.jpg);
+        }
+        #firstblock h1 {
+            color: white;
+            background-color: #154184;
+            padding: 1em;
+        }
+
+        #firstblock img {
+            float: right;
+            height: 12em;
+        }
+/* FIRST BLOCK END */
+
+/* SECOND BLOCK */
+        #secondblock {
+            background-color: white;
+            padding: 5em;
+            text-align: center;
+
+        }
+        #secondblock h1 {
+            padding-bottom: 2em;
+            padding-top: -1em;
+            color: #154184;
+}
+        .clearfix::after {
+             content: "";
+             clear: both;
+             display: table;
+        }
+        .wordcontainer {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+/* SECOND BLOCK END */
+
+/* THIRD BLOCK */
+        #thirdblock {
+            padding: 10em;
+            padding-right: 2em;
+            background-image: url(images/dogwithbox.jpg);
+            background-repeat: no-repeat;
+            background-size: 140%;
+            background-position: bottom left;
+            overflow: auto;
+}
+        #thirdblock h1 {
+            float: right;
+            padding-left: 10em;
+            padding-right: 2em;
+            
+}
+        #thirdblock p {
+            float: right;
+            padding-right: 3em;
+            text-align: right;
+            
+        
+}
+    
+/* FOURTH BLOCK */
+        #content {
+            background-color: white;
+/*            overflow: auto;*/
+            padding: 3em;
+            text-align: center;
+            
+            
+        }
+/*
+        #content::after {
+            content: "";
+            clear: both;
+            display: table;
+*/
+        }
+        .column {
+            float: left;
+            padding: 1em;
+/*
+            
+*/
+        }
+
+/* FOURTH BLOCK */
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 1em;
+            clear: both;
+        }
+@media screen and (min-width: 680px) {
+    .main {
+/*        width: 67%;*/
+            
+    }
+    .sidebar {
+        float: right;
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .container {
+        width: 960px;
+    }
+}
